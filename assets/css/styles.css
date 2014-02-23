@@ -1,0 +1,40 @@
+@import url(reset.css);
+@import url(font-awesome.css);
+@import url(../fonts/Lato-Light.ttf);
+/* colors */
+/* body { background-image: url(images/light_wool.png); color: #444; text-size: 20px; } */
+#drewbro a { font-family: 'Lato', sans-serif; color: #444; }
+#drewbro { font-family: 'Lato', sans-serif; color: #444; }
+#drewbro a:hover { color: #a11; }
+
+/* unversal styles */
+#drewbro a { text-decoration: none; }
+#drewbro .content-main div { box-shadow: 10px 12px #444; }
+/* layout */
+@media (min-width: 800px) {
+  #drewbro nav { width: 300px; margin: 0 auto; }
+  #drewbro nav ul li div { display:inline; } 
+  #drewbro nav ul li { display:inline; padding-left: 20px; }
+  #drewbro nav ul li a:hover { text-decoration: underline; }
+  #drewbro .content-main { margin: 0 auto; width: 800px; height: 400px; padding: 200px 0px 0px; }
+  #drewbro .content-main div { border-radius: 35px; box-shadow: 10px 12px #444; margin: 0 auto; width: 490px; }
+  #drewbro .content-main div a { text-decoration: none; }
+  #drewbro .content-main div i { font-size: 120px; padding: 0px 25px; }
+  #drewbro footer { width: 230px; margin: 0 auto; }
+}
+
+@media (max-width: 799px) {
+  #drewbro { height: 100%; }
+
+  #drewbro nav { text-align: center; }
+  #drewbro nav ul li:hover { background-color: #eee;}
+  #drewbro nav ul li div { padding: 15px 0; border-bottom: 1px solid #444; background-color: #fff; }
+  #drewbro nav ul li div:hover { background-color: #fafafa; }
+  #drewbro nav ul li div:active { background-color: #fafafa; }
+
+  #drewbro .content-main div { margin: 15% auto 35%; text-align: center; width: 250px; border-radius: 25px;  }
+  #drewbro .content-main div a i { padding: 0 0;  }
+
+  #drewbro footer { text-align: center; }
+}
+
