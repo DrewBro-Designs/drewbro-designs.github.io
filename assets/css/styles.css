@@ -2,20 +2,29 @@
 @import url(font-awesome.css);
 @import url(../fonts/Lato-Light.ttf);
 /* colors */
-/* body { background-image: url(images/light_wool.png); color: #444; text-size: 20px; } */
-#drewbro a { font-family: 'Lato', sans-serif; color: #444; }
-#drewbro { font-family: 'Lato', sans-serif; color: #444; }
-#drewbro a:hover { color: #a11; }
+ body { background-image: url(../images/web_type_set.jpg); color: #444; text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5), 1px -1px 0 rgba(255, 255, 255, 0.5), -1px 1px 0 rgba(255, 255, 255, 0.5), 1px 1px 0 rgba(255, 255, 255, 0.5); text-size: 1.25em; }
+#drewbro { min-height: 100%; }
+#drewbro a { font-family: 'Lato', sans-serif; color: #eee; }
+#drewbro .content-main div a:hover {color: #a11; }
+#drewbro { font-family: 'Lato', sans-serif; color: #eee; text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5); }
 
 /* unversal styles */
+.fa-github:hover { color: #333;}
+.fa-google-plus:hover { color: #dd4b39;}
+.fa-twitter:hover { color: #55acee;}
+
+#drewbro #bg { position:fixed; top: 0; left:0; min-width:100%;min-height:100%; }
 #drewbro a { text-decoration: none; }
-#drewbro .content-main div { box-shadow: 10px 12px #444; }
+#drewbro .content-main div { background-color: rgba(255, 255, 255, 0.7); box-shadow: 10px 12px #444; }
+#drewbro #mobile-nav { font-size: 2.5em; padding-left: .25em; display: inline-block; }
+
 /* layout */
 @media (min-width: 800px) {
-  #drewbro nav { width: 300px; margin: 0 auto; }
-  #drewbro nav ul li div { display:inline; } 
-  #drewbro nav ul li { display:inline; padding-left: 20px; }
-  #drewbro nav ul li a:hover { text-decoration: underline; }
+  #drewbro nav { margin-top: -40px; padding: 15px 0; background-color: rgba(255, 255, 255, 0.7); text-align:center; /* width: 300px; margin: 0 auto;*/ }
+  #drewbro #mobile-nav { visibility: hidden; }
+  #drewbro nav ul li div { display:inline; }
+  #drewbro nav ul li { visibility: visible;display:inline; padding-left: 20px; }
+  #drewbro nav ul li a:hover { color: #dd4b39; }
   #drewbro .content-main { margin: 0 auto; width: 800px; height: 400px; padding: 200px 0px 0px; }
   #drewbro .content-main div { border-radius: 35px; box-shadow: 10px 12px #444; margin: 0 auto; width: 490px; }
   #drewbro .content-main div a { text-decoration: none; }
@@ -25,12 +34,12 @@
 
 @media (max-width: 799px) {
   #drewbro { height: 100%; }
-
+  #drewbro .nav-list li {visibility:hidden; } 
+  #drewbro  { color: #eee; text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5); text-size: 1.25em; }
   #drewbro nav { text-align: center; }
-  #drewbro nav ul li:hover { background-color: #eee;}
-  #drewbro nav ul li div { padding: 15px 0; border-bottom: 1px solid #444; background-color: #fff; }
-  #drewbro nav ul li div:hover { background-color: #fafafa; }
-  #drewbro nav ul li div:active { background-color: #fafafa; }
+  #drewbro nav ul li:hover { background-color: #a11;}
+  #drewbro nav ul li:active { background-color: #a11;}
+  #drewbro nav ul li div {color: #eee; padding: 15px 0; border-bottom: 1px solid #444; background-color: rgba(255, 255, 255, 0.5); }
 
   #drewbro .content-main div { margin: 15% auto 35%; text-align: center; width: 250px; border-radius: 25px;  }
   #drewbro .content-main div a i { padding: 0 0;  }
