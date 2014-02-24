@@ -10,6 +10,7 @@
 #drewbro { font-family: 'Lato', sans-serif; color: #eee; text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5); }
 
 /* unversal styles */
+.clear { overflow: hidden; }
 .fa-github:hover { color: #333;}
 .fa-google-plus:hover { color: #dd4b39;}
 .fa-twitter:hover { color: #55acee;}
@@ -17,7 +18,7 @@
 #drewbro #bg { position:fixed; top: 0; left:0; min-width:100%;min-height:100%; }
 #drewbro a { text-decoration: none; }
 #drewbro .content-main div { background-color: rgba(255, 255, 255, 0.7); box-shadow: 10px 12px #444; }
-#drewbro #mobile-nav { font-size: 2.5em; padding-left: .25em; display: inline-block; }
+#drewbro #mobile-nav { float:right; font-size: 2.5em; padding-right: .25em; }
 
 /* layout */
 @media (min-width: 800px) {
@@ -42,9 +43,9 @@
   #drewbro nav ul li:active { background-color: #a11;}
   #drewbro nav ul li div {color: #eee; padding: 15px 0; border-bottom: 1px solid #444; background-color: rgba(255, 255, 255, 0.5); }
 
-  #drewbro .content-main div { margin: 15% auto 35%; text-align: center; width: 250px; border-radius: 25px;  }
+  #drewbro .content-main div { margin: 10% auto 35%; text-align: center; width: 250px; border-radius: 25px;  }
   #drewbro .content-main div a i { padding: 0 0;  }
-
+  #drewbro .db-icon { left: 5px; position: absolute; top: -15px; }
   #drewbro footer { text-align: center; }
 }
 
