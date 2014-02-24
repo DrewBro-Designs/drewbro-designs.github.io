@@ -1,6 +1,7 @@
 @import url(reset.css);
 @import url(font-awesome.css);
 @import url(../fonts/Lato-Light.ttf);
+@import url(drewbro-fonts.css);
 /* colors */
  body { background-image: url(../images/web_type_set.jpg); color: #444; text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5), 1px -1px 0 rgba(255, 255, 255, 0.5), -1px 1px 0 rgba(255, 255, 255, 0.5), 1px 1px 0 rgba(255, 255, 255, 0.5); text-size: 1.25em; }
 #drewbro { min-height: 100%; }
@@ -12,7 +13,7 @@
 .fa-github:hover { color: #333;}
 .fa-google-plus:hover { color: #dd4b39;}
 .fa-twitter:hover { color: #55acee;}
-
+.db-icon { font-size: 4em;font-family: 'drewbro-icon-regularTTF';}
 #drewbro #bg { position:fixed; top: 0; left:0; min-width:100%;min-height:100%; }
 #drewbro a { text-decoration: none; }
 #drewbro .content-main div { background-color: rgba(255, 255, 255, 0.7); box-shadow: 10px 12px #444; }
@@ -29,7 +30,7 @@
   #drewbro .content-main div { border-radius: 35px; box-shadow: 10px 12px #444; margin: 0 auto; width: 490px; }
   #drewbro .content-main div a { text-decoration: none; }
   #drewbro .content-main div i { font-size: 120px; padding: 0px 25px; }
-  #drewbro footer { width: 230px; margin: 0 auto; }
+  #drewbro footer { width: 275px; margin: 0 auto; }
 }
 
 @media (max-width: 799px) {
