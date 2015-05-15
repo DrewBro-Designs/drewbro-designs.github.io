@@ -5,57 +5,22 @@
 <title>Home: db™ | DrewBro Designs</title>
 
 <link rel="stylesheet" href="assets/css/styles.css">
-<script>
-  window.onresize = resize;
-  function resize(){
-    if (window.innerWidth >= 800){
-      showList();
-    } else {
-      hideList();
-    }
-  }
-
-  function getArray(){
-    var navItems = document.getElementsByTagName('li');
-    return navItems;
-  }
-
-  function showList(){
-    var myElArray = getArray();
-    for (var i=0;myElArray.length > i;i++){
-      myElArray[i].style.visibility = 'visible';
-    }
-  }
-
-  function hideList() {
-    var myElArray = getArray();
-    for (var i=0; myElArray.length > i; i++){
-      myElArray[i].style.visibility = 'hidden';
-    }
-  }
-
-  function navMenu(){
-    var navList = getArray();
-    if(navList[0].style.visibility === 'visible'){
-      hideList();
-      } else {
-      showList();
-    }
-  }
-</script>
 
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="keywords" content="drew, drewbro, drewbro designs, ogryzek, drew ogryzek">
 <meta name="description" content="about db™ | DrewBro Designs">
+
 <div id="drewbro" class="container">
-<div class="clear">
-  <a href="#menu" id="mobile-nav" onclick="navMenu()"><i class="fa fa-bars"></i></a>
-</div>
+
+  <div class="clear">
+    <a href="#menu" id="mobile-nav" onclick="navMenu()"><i class="fa fa-bars"></i></a>
+  </div>
+
   <nav class="nav nav-default">
     <ul class="nav-list">
       <li><a href=""><div class="nav-div">home</div></a>
       <li><a href="http://www.linkedin.com/profile/view?id=316501614"><div class="nav-div">about</div></a>
-      <li><a href=""><div class="nav-div">blog</div></a>
+      <li><a href="" title="coming soon!"><div class="nav-div">blog</div></a>
       <li><a href="mailto:drew@drewbro.com"><div class="nav-div">contact</div></a>
     </ul>
   </nav>
@@ -74,3 +39,41 @@
 
 </div>
 
+<script>
+  window.onresize = resize;
+  function resize(){
+    if (window.innerWidth >= 800){
+      showList();
+    } else {
+      hideList();
+    }
+  }
+
+  function navMenu(){
+    var navList = getArray();
+    if(navList[0].style.visibility === 'visible'){
+      hideList();
+      } else {
+      showList();
+    }
+  }
+
+  function showList(){
+    var myElArray = getArray();
+    for (var i=0;myElArray.length > i;i++){
+      myElArray[i].style.visibility = 'visible';
+    }
+  }
+
+  function hideList() {
+    var myElArray = getArray();
+    for (var i=0; myElArray.length > i; i++){
+      myElArray[i].style.visibility = 'hidden';
+    }
+  }
+
+    function getArray(){
+    var navItems = document.getElementsByTagName('li');
+    return navItems;
+  }
+</script>

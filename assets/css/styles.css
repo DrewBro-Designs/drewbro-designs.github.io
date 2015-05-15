@@ -2,6 +2,7 @@
 @import url(font-awesome.css);
 @import url(../fonts/Lato-Light.ttf);
 @import url(drewbro-fonts.css);
+
 /* colors */
  body { background-image: url(../images/web_type_set.jpg); color: #444; text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5), 1px -1px 0 rgba(255, 255, 255, 0.5), -1px 1px 0 rgba(255, 255, 255, 0.5), 1px 1px 0 rgba(255, 255, 255, 0.5); text-size: 1.25em; }
 #drewbro { min-height: 100%; }
@@ -22,7 +23,7 @@
 
 /* layout */
 @media (min-width: 800px) {
-  #drewbro nav { margin-top: -40px; padding: 15px 0; background-color: rgba(255, 255, 255, 0.7); text-align:center; /* width: 300px; margin: 0 auto;*/ }
+  #drewbro nav { margin-top: -40px; padding: 15px 0; background-color: rgba(255, 255, 255, 0.7); text-align:center; }
   #drewbro #mobile-nav { visibility: hidden; }
   #drewbro nav ul li div { display:inline; }
   #drewbro nav ul li { visibility: visible;display:inline; padding-left: 20px; }
@@ -30,7 +31,7 @@
   #drewbro .content-main { margin: 0 auto; width: 800px; height: 400px; padding: 200px 0px 0px; }
   #drewbro .content-main div { border-radius: 35px; box-shadow: 10px 12px #444; margin: 0 auto; width: 490px; }
   #drewbro .content-main div a { text-decoration: none; }
-  #drewbro .content-main div i { font-size: 120px; padding: 0px 25px; }
+  #drewbro .content-main div i { font-size: 120px; padding: 15px 25px; }
   #drewbro footer { width: 275px; margin: 0 auto; }
 }
 
@@ -43,8 +44,8 @@
   #drewbro nav ul li:active { background-color: #a11;}
   #drewbro nav ul li div {color: #eee; padding: 15px 0; border-bottom: 1px solid #444; background-color: rgba(255, 255, 255, 0.5); }
 
-  #drewbro .content-main div { margin: 10% auto 35%; text-align: center; width: 250px; border-radius: 25px;  }
-  #drewbro .content-main div a i { padding: 0 0;  }
+  #drewbro .content-main div { margin: 10% auto 35%; text-align: center; width: 270px; border-radius: 25px; }
+  #drewbro .content-main div a i { padding: .09em;  }
   #drewbro .db-icon { left: 5px; position: absolute; top: -15px; }
   #drewbro footer { text-align: center; }
 }
